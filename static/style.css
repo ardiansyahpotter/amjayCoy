@@ -1,0 +1,63 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+header {
+    margin-bottom: 10px; /* Mengurangi jarak di bawah header */
+}
+
+.header-container {
+    display: flex; /* Menggunakan Flexbox untuk menyusun logo dan judul secara horizontal */
+    align-items: center; /* Menjaga logo dan judul sejajar secara vertikal */
+}
+
+.logo {
+    width: 270px; /* Atur lebar logo sesuai keinginan */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    margin-right: 20px; /* Menambahkan jarak antara logo dan judul */
+}
+
+h1 {
+    color: #333;
+    flex-grow: 1; /* Memungkinkan judul untuk mengambil ruang yang tersedia */
+    text-align: center; /* Menjaga judul tetap di tengah */
+    margin-top: 0; /* Menghilangkan jarak atas judul agar lebih dekat dengan logo */
+    padding-top: 15px; /* Atur padding atas untuk menyelaraskan dengan logo */
+    font-size: 2.3em; /* Atur ukuran font sesuai keinginan */
+}
+
+.container {
+    display: flex; /* Menggunakan Flexbox untuk menyusun elemen secara horizontal */
+    justify-content: space-between; /* Jarak yang sama di antara profil */
+    flex-wrap: nowrap; /* Memastikan semua elemen tetap di satu baris */
+    overflow-x: auto; /* Jika tidak muat, akan muncul scrollbar horizontal */
+}
+
+.profile {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 22%; /* Mengurangi lebar profil untuk mencocokkan lebih banyak profil dalam satu baris */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 5px; /* Mengurangi jarak antar profil */
+}
+
+.profile img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Mengatur tinggi otomatis */
+    border-radius: 8px 8px 0 0; /* Membuat sudut gambar bulat */
+}
+
+.info {
+    text-align: left; /* Menyusun teks ke kiri */
+}
+
+.info h2 {
+    margin: 0; /* Menghapus margin default */
+    font-size: 1.2em; /* Ukuran font untuk nama */
+}
